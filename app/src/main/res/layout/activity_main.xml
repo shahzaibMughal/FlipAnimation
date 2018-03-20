@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shahzaib.flipanimation.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/backImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:src="@drawable/image_two"
+        android:onClick="rightIn_leftOut"
+        android:rotationY="90"/>
+
+    <ImageView
+        android:id="@+id/frontImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:layout_below="@id/backImage"
+        android:src="@drawable/image_one"
+        android:onClick="leftIn_rightOut" />
+
+
+
+
+
+</RelativeLayout>
